@@ -8,5 +8,5 @@ Burger Burger
 
 That's it!
 
-![Alt Text] public/images/burgerburger.jpeg
 
+<img src="public/images/burgerburger.jpeg" alt="burgerjoint">
