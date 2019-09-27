@@ -8,5 +8,6 @@ Burger Burger
 
 That's it!
 
+Check out live here https://burgerburgerjoint.herokuapp.com/index
 
 <img src="public/images/burgerburger.jpeg" alt="burgerjoint">
