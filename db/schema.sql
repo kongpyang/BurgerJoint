@@ -1,15 +1,9 @@
-DROP DATABASE IF EXISTS burgersdb;
-CREATE DATABASE burgersdb;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
-USE burgersdb;
-
--- Create the table tasks.
-CREATE TABLE burgers(
-  id AUTO_INCREMENT NOT NULL,
-  burger_name varchar(50) NOT NULL,
-  devoured BOOLEAN(50) NOT NULL,
-
-PRIMARY KEY (id)
+CREATE TABLE burgers (
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name varchar(50) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	PRIMARY KEY (id)
 );
-
-

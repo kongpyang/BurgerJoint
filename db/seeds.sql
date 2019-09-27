@@ -1,3 +1,3 @@
-INSERT INTO burgers (burger_name) VALUES ("BlondeChicken with lettuce and tomates");
-INSERT INTO burgers (burger_name) VALUES ("Baconator");
-INSERT INTO burgers (burger_name) VALUES ("RockMouth Angus");
+INSERT INTO burger (burger_name, devour) VALUES ('blondegrub', false);
+INSERT INTO burger (burger_name, devour) VALUES ('crimeburger', false);
+INSERT INTO burger (burger_name, devour) VALUES ('chickenroad', flase);

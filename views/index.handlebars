@@ -1,0 +1,42 @@
+<div class="container">
+    <img class="burger-img" src="/images/buger-img.png" alt="burger img"><br>
+    <h1 class="heading">Eat-Da-Burger!</h1>
+    <div class="burger-con">
+        <ul>
+        {{!-- <li>
+            <div>
+                <p>1.</p>
+                <p>Burger Zinger beef</p>
+            </div>
+            <input class="btn btn-secondary" type="button" value="Devour it!">
+        </li> --}}
+        {{#each burgers}}
+            {{#unless devour}}
+                <li>
+                    <div>
+                        <p>{{id}}.</p>
+                        <p>{{name}}</p>
+                    </div>
+                    <form action="/api/burgers/{{id}}" method="POST">
+                        <input class="btn btn-secondary" type="submit" value="Devour it!">
+                    </form>
+                </li>
+            {{/unless}}
+        {{/each}}
+    </ul>
+    <ul>
+        {{#each burgers}}
+            {{#if devour}}
+            <li>
+                <input type="text" placeholder="{{id}}.{{name}}">
+            </li>
+            {{/if}}
+        {{/each}}
+    </ul>
+    </div> 
+    <form action="/api/burgers" method="POST">
+        <textarea class="input" name="name" id=""></textarea><br>
+        <input class="btn btn-primary" type="submit" >
+    </form>
+    <p>Eat a burger you want to eat Click the "Submit" button</p>
+</div>
