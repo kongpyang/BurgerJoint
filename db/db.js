@@ -1,9 +1,9 @@
 var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize("burgers_db", process.env.DB_USER, process.env.PASS, {
+var sequelize = new Sequelize("burgersdb", "root", "root", {
     dialect: "mysql",
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT
+    host: "localhost",
+    port:"8889"
 });
 
 module.exports = sequelize;
