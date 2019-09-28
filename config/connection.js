@@ -8,9 +8,9 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection({
   host: "localhost",
   port: 8889,
-  user: "x9czzi7n8xxgy0hd",
-  password: "rjt9gjr6x0iqrcxq",
-  database: "lsbba3gnd73kfkua"
+  user: "root",
+  password: "root",
+  database: "burgersdb"
 });
 
 // Make connection.
@@ -25,4 +25,4 @@ connection.connect(function(err) {
 // Export connection for our ORM to use.
 connection.connect();
 module.exports = connection;
-};
+}
